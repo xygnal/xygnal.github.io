@@ -6,11 +6,11 @@ math: true
 
 Delete this post after visual check.
 
-Inline math \(sinc(x) = \frac{\sin(\pi x)}{\pi x}\) and display math:
+Inline math $sinc(x) = \frac{\sin(\pi x)}{\pi x}$ and display math:
 
-\[
+$$
 f(x) = \sum_{k=-\infty}^{\infty} sinc\left(\frac{x-k}{D}\right)
-\]
+$$
 
 ```bash
 ffmpeg -f v4l2 -list_formats all -i /dev/video0 -hide_banner
