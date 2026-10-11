@@ -168,6 +168,13 @@ img {
   margin: 2rem auto;
 }
 
+.post-content img {
+  width: auto;
+  max-width: min(60rem, calc(100vw - 2.5rem));
+  margin: 2rem 0 2rem 50%;
+  transform: translateX(-50%);
+}
+
 blockquote {
   margin-left: 0;
   padding-left: 1rem;
@@ -228,6 +235,16 @@ pre code {
 .highlight {
   background: var(--code-bg);
   border-radius: 8px;
+}
+
+.post-content > pre,
+.post-content > .highlighter-rouge {
+  width: fit-content;
+  min-width: 100%;
+  max-width: min(60rem, calc(100vw - 2.5rem));
+  margin-bottom: 1.4em;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .highlight pre {
