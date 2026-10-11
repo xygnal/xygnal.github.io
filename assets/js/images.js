@@ -1,4 +1,6 @@
 document.querySelectorAll('.post-content img').forEach((img) => {
+  img.loading = 'lazy';
+  img.decoding = 'async';
   if (img.closest('a')) return;
   const a = document.createElement('a');
   a.href = img.currentSrc || img.src;

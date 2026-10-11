@@ -3,6 +3,8 @@ layout: default
 title: Home
 ---
 
+<h1 class="visually-hidden">{{ site.title }} - {{ site.description }}</h1>
+
 {% assign groups = "math,image,mediaTool" | split: "," %}
 {% for g in groups %}
 <h2>{{ g }}</h2>
