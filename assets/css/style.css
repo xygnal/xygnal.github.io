@@ -170,9 +170,17 @@ img {
 
 .post-content img {
   width: auto;
-  max-width: min(60rem, calc(100vw - 2.5rem));
+  max-width: min(80rem, calc(100vw - 2.5rem));
   margin: 2rem 0 2rem 50%;
   transform: translateX(-50%);
+}
+
+.post-content a.img-original {
+  display: block;
+}
+
+.post-content a.img-original img {
+  cursor: zoom-in;
 }
 
 blockquote {
